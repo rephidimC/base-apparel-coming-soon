@@ -5,7 +5,7 @@ body {
 
 .background {
   height: 43.5rem;
-    width: 61%;
+  width: 61%;
 }
 
 .outer-layer {
@@ -44,7 +44,7 @@ body {
 }
 
 .caption {
-  max-width: 63%;
+  max-width: 65%;
   line-height: 1.5;
   color: hsl(0, 36%, 70%);
 }
@@ -55,26 +55,33 @@ body {
 }
 
 input {
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
   width: 25rem;
   border-radius: 2rem;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 600;
   border-color: hsl(0, 36%, 70%);
   border-style: solid;
   border-width: 1px;
 }
 
+.icon-error {
+  position: absolute;
+  bottom: 6.2rem;
+    left: 18rem;
+    display: none;
+
+}
+
 .arrow {
   background-color: hsl(0, 93%, 68%);
-  bottom: -0.1rem;
+  position: relative;
+  bottom: 3.25rem;
   height: 3.4rem;
   width: 5.5rem;
-  right: 17rem;
+  left: 23.4rem;
   border-radius: 2rem;
-  position: absolute;
   cursor: pointer;
 }
 
@@ -82,7 +89,110 @@ input {
   box-shadow: 0 20px 20px 4px rgba(0, 0, 0, 0.2), inset 0 20px 20px 7px rgba(0, 0, 0, 0.19);
 }
 
-
 .icon-arrow {
   margin: 1.2rem 0 1rem 2.5rem;
+}
+
+.result {
+  position: relative;
+  bottom: 3rem;
+    left: 2rem;
+}
+
+.mobile-hero {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  body {
+    margin: 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: -14rem;
+    right: 14rem;
+    max-width: 31%;
+  }
+
+  .text-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  .background {
+    display: none;
+  }
+
+  .input {
+    width: 2rem;
+  }
+
+  .mobile-hero {
+    display: block;
+    position: relative;
+    top: 6rem;
+    max-width: 100%;
+  }
+
+  .outer-layer {
+    position: relative;
+  }
+
+  .text {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+
+  .we {
+    margin-top: 9rem;
+  }
+
+  .coming {
+    max-width: 100%;
+  }
+
+  .caption {
+    max-width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 8%;
+    margin-top: 1.3rem;
+    line-height: 1.7;
+  }
+
+  .email {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .input {
+    width: 16rem;
+  }
+
+  .arrow {
+    height: 3.1rem;
+    width: 4.3rem;
+    position: relative;
+    left: 16.5rem;
+    bottom: 3.1rem;
+  }
+
+  .icon-arrow {
+    margin: 1rem 0;
+  }
+
+.icon-error {
+    bottom: 5.95rem;
+    left: 14.5rem;
+}
+
+  .result {
+    font-size: 16px;
+    left: -1.2rem;
+  }
 }
